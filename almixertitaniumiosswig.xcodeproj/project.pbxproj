@@ -1,0 +1,964 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24416B8111C4CA220047AFDD /* Build & Test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */;
+			buildPhases = (
+				24416B8011C4CA220047AFDD /* ShellScript */,
+			);
+			dependencies = (
+				24416B8511C4CA280047AFDD /* PBXTargetDependency */,
+			);
+			name = "Build & Test";
+			productName = "Build & test";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00470B1216A329B3008D5B45 /* ALmixer.c in Sources */ = {isa = PBXBuildFile; fileRef = 00470AA116A329B3008D5B45 /* ALmixer.c */; };
+		00470B1316A329B3008D5B45 /* ALmixer.h in Headers */ = {isa = PBXBuildFile; fileRef = 00470AA216A329B3008D5B45 /* ALmixer.h */; };
+		00470B1416A329B3008D5B45 /* CircularQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 00470AA416A329B3008D5B45 /* CircularQueue.c */; };
+		00470B1516A329B3008D5B45 /* CircularQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 00470AA516A329B3008D5B45 /* CircularQueue.h */; };
+		00470B1816A329B3008D5B45 /* SDLMain.h in Headers */ = {isa = PBXBuildFile; fileRef = 00470AB016A329B3008D5B45 /* SDLMain.h */; };
+		00470B1A16A329B3008D5B45 /* ALmixer_RWops.c in Sources */ = {isa = PBXBuildFile; fileRef = 00470AB316A329B3008D5B45 /* ALmixer_RWops.c */; };
+		00470B1B16A329B3008D5B45 /* ALmixer_RWops.h in Headers */ = {isa = PBXBuildFile; fileRef = 00470AB416A329B3008D5B45 /* ALmixer_RWops.h */; };
+		00470B1C16A329B3008D5B45 /* coreaudio.c in Sources */ = {isa = PBXBuildFile; fileRef = 00470AB516A329B3008D5B45 /* coreaudio.c */; };
+		00470B2016A329B3008D5B45 /* SDL_endian_minimal.h in Headers */ = {isa = PBXBuildFile; fileRef = 00470ABA16A329B3008D5B45 /* SDL_endian_minimal.h */; };
+		00470B2416A329B3008D5B45 /* luaal.h in Headers */ = {isa = PBXBuildFile; fileRef = 00470ABF16A329B3008D5B45 /* luaal.h */; };
+		00470B2516A329B3008D5B45 /* SimpleMutex.c in Sources */ = {isa = PBXBuildFile; fileRef = 00470AC016A329B3008D5B45 /* SimpleMutex.c */; };
+		00470B2616A329B3008D5B45 /* SimpleMutex.h in Headers */ = {isa = PBXBuildFile; fileRef = 00470AC116A329B3008D5B45 /* SimpleMutex.h */; };
+		00470B2716A329B3008D5B45 /* SimpleThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 00470AC216A329B3008D5B45 /* SimpleThread.h */; };
+		00470B2816A329B3008D5B45 /* SimpleThreadPosix.c in Sources */ = {isa = PBXBuildFile; fileRef = 00470AC316A329B3008D5B45 /* SimpleThreadPosix.c */; };
+		00470B2A16A329B3008D5B45 /* SoundDecoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 00470AC516A329B3008D5B45 /* SoundDecoder.c */; };
+		00470B2B16A329B3008D5B45 /* SoundDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 00470AC616A329B3008D5B45 /* SoundDecoder.h */; };
+		00470B2C16A329B3008D5B45 /* SoundDecoder_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 00470AC716A329B3008D5B45 /* SoundDecoder_Internal.h */; };
+		00470B2D16A329B3008D5B45 /* tErrorLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 00470AC816A329B3008D5B45 /* tErrorLib.c */; };
+		00470B2E16A329B3008D5B45 /* tErrorLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 00470AC916A329B3008D5B45 /* tErrorLib.h */; };
+		00470B2F16A329B3008D5B45 /* SimpleSemaphore.h in Headers */ = {isa = PBXBuildFile; fileRef = 00470ACB16A329B3008D5B45 /* SimpleSemaphore.h */; };
+		00470B3116A329B3008D5B45 /* LinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 00470ACE16A329B3008D5B45 /* LinkedList.c */; };
+		00470B3216A329B3008D5B45 /* LinkedList.h in Headers */ = {isa = PBXBuildFile; fileRef = 00470ACF16A329B3008D5B45 /* LinkedList.h */; };
+		00470B3316A329B3008D5B45 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 00470AD816A329B3008D5B45 /* AppDelegate.h */; };
+		00470B3616A329B3008D5B45 /* playstream-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 00470AE216A329B3008D5B45 /* playstream-Prefix.pch */; };
+		00470B3916A329B3008D5B45 /* ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 00470AE616A329B3008D5B45 /* ViewController.h */; };
+		00470B3B16A329B3008D5B45 /* ALmixer_so-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 00470AF016A329B3008D5B45 /* ALmixer_so-Prefix.pch */; };
+		00470B3C16A329B3008D5B45 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 00470AF916A329B3008D5B45 /* AppDelegate.h */; };
+		00470B3F16A329B3008D5B45 /* playstream-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 00470B0316A329B3008D5B45 /* playstream-Prefix.pch */; };
+		00470B7B16A32ACB008D5B45 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00470B7916A32ACB008D5B45 /* AudioToolbox.framework */; };
+		00470B7C16A32ACB008D5B45 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00470B7A16A32ACB008D5B45 /* OpenAL.framework */; };
+		00470B7E16A32B55008D5B45 /* ALmixer_wrap_javascriptcore.c in Sources */ = {isa = PBXBuildFile; fileRef = 00470B7D16A32B55008D5B45 /* ALmixer_wrap_javascriptcore.c */; };
+		24DD6CF91134B3F500162E58 /* NetPlaycontrolAlmixerswigModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* NetPlaycontrolAlmixerswigModule.h */; };
+		24DD6CFA1134B3F500162E58 /* NetPlaycontrolAlmixerswigModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* NetPlaycontrolAlmixerswigModule.m */; };
+		24DE9E1111C5FE74003F90F6 /* NetPlaycontrolAlmixerswigModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* NetPlaycontrolAlmixerswigModuleAssets.h */; };
+		24DE9E1211C5FE74003F90F6 /* NetPlaycontrolAlmixerswigModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* NetPlaycontrolAlmixerswigModuleAssets.m */; };
+		AA747D9F0F9514B9006C5449 /* NetPlaycontrolAlmixerswig_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* NetPlaycontrolAlmixerswig_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00470B4216A329B5008D5B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00470AD416A329B3008D5B45 /* ALmixer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 00605C5416254FDF00A479DE;
+			remoteInfo = ALmixer;
+		};
+		00470B4416A329B5008D5B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00470AD416A329B3008D5B45 /* ALmixer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 00605D891625571E00A479DE;
+			remoteInfo = playstream;
+		};
+		00470B4816A329B5008D5B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00470AEB16A329B3008D5B45 /* ALmixer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0047076F1694EDE8008D5B45;
+			remoteInfo = ALmixer;
+		};
+		00470B4A16A329B5008D5B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00470AEB16A329B3008D5B45 /* ALmixer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 004708201694F2B2008D5B45;
+			remoteInfo = playstream;
+		};
+		00470B5116A329B5008D5B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00470AF516A329B3008D5B45 /* ALmixer_swigcrash.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0047076F1694EDE8008D5B45;
+			remoteInfo = ALmixer;
+		};
+		00470B5316A329B5008D5B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00470AF516A329B3008D5B45 /* ALmixer_swigcrash.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 004708201694F2B2008D5B45;
+			remoteInfo = playstream;
+		};
+		00470B5516A329B5008D5B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00470AF516A329B3008D5B45 /* ALmixer_swigcrash.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 00470848169508D1008D5B45;
+			remoteInfo = swigtest;
+		};
+		00470B5716A329B5008D5B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00470AF516A329B3008D5B45 /* ALmixer_swigcrash.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0047097916951000008D5B45;
+			remoteInfo = lua;
+		};
+		00470B5916A329B5008D5B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00470AF516A329B3008D5B45 /* ALmixer_swigcrash.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 004709BA1695126F008D5B45;
+			remoteInfo = ALmixer_bundle;
+		};
+		24416B8411C4CA280047AFDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = almixertitaniumiosswig;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00470AA116A329B3008D5B45 /* ALmixer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ALmixer.c; sourceTree = "<group>"; };
+		00470AA216A329B3008D5B45 /* ALmixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALmixer.h; sourceTree = "<group>"; };
+		00470AA316A329B3008D5B45 /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
+		00470AA416A329B3008D5B45 /* CircularQueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CircularQueue.c; sourceTree = "<group>"; };
+		00470AA516A329B3008D5B45 /* CircularQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularQueue.h; sourceTree = "<group>"; };
+		00470AA616A329B3008D5B45 /* cmake_uninstall.cmake.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmake_uninstall.cmake.in; sourceTree = "<group>"; };
+		00470AA716A329B3008D5B45 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		00470AA916A329B3008D5B45 /* ALmixer.doxyfile.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ALmixer.doxyfile.cmake; sourceTree = "<group>"; };
+		00470AAD16A329B3008D5B45 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		00470AAE16A329B3008D5B45 /* playsound.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = playsound.c; sourceTree = "<group>"; };
+		00470AAF16A329B3008D5B45 /* playstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = playstream.c; sourceTree = "<group>"; };
+		00470AB016A329B3008D5B45 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = "<group>"; };
+		00470AB116A329B3008D5B45 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = "<group>"; };
+		00470AB316A329B3008D5B45 /* ALmixer_RWops.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ALmixer_RWops.c; sourceTree = "<group>"; };
+		00470AB416A329B3008D5B45 /* ALmixer_RWops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALmixer_RWops.h; sourceTree = "<group>"; };
+		00470AB516A329B3008D5B45 /* coreaudio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coreaudio.c; sourceTree = "<group>"; };
+		00470AB716A329B3008D5B45 /* mpg123.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mpg123.c; sourceTree = "<group>"; };
+		00470AB816A329B3008D5B45 /* oggtremor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oggtremor.c; sourceTree = "<group>"; };
+		00470AB916A329B3008D5B45 /* oggvorbis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oggvorbis.c; sourceTree = "<group>"; };
+		00470ABA16A329B3008D5B45 /* SDL_endian_minimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDL_endian_minimal.h; sourceTree = "<group>"; };
+		00470ABB16A329B3008D5B45 /* SDL_sound_minimal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SDL_sound_minimal.c; sourceTree = "<group>"; };
+		00470ABC16A329B3008D5B45 /* wav.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wav.c; sourceTree = "<group>"; };
+		00470ABE16A329B3008D5B45 /* luaal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = luaal.c; sourceTree = "<group>"; };
+		00470ABF16A329B3008D5B45 /* luaal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaal.h; sourceTree = "<group>"; };
+		00470AC016A329B3008D5B45 /* SimpleMutex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SimpleMutex.c; sourceTree = "<group>"; };
+		00470AC116A329B3008D5B45 /* SimpleMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleMutex.h; sourceTree = "<group>"; };
+		00470AC216A329B3008D5B45 /* SimpleThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleThread.h; sourceTree = "<group>"; };
+		00470AC316A329B3008D5B45 /* SimpleThreadPosix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SimpleThreadPosix.c; sourceTree = "<group>"; };
+		00470AC416A329B3008D5B45 /* SimpleThreadWindows.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SimpleThreadWindows.c; sourceTree = "<group>"; };
+		00470AC516A329B3008D5B45 /* SoundDecoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SoundDecoder.c; sourceTree = "<group>"; };
+		00470AC616A329B3008D5B45 /* SoundDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundDecoder.h; sourceTree = "<group>"; };
+		00470AC716A329B3008D5B45 /* SoundDecoder_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundDecoder_Internal.h; sourceTree = "<group>"; };
+		00470AC816A329B3008D5B45 /* tErrorLib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tErrorLib.c; sourceTree = "<group>"; };
+		00470AC916A329B3008D5B45 /* tErrorLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tErrorLib.h; sourceTree = "<group>"; };
+		00470ACB16A329B3008D5B45 /* SimpleSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleSemaphore.h; sourceTree = "<group>"; };
+		00470ACC16A329B3008D5B45 /* SimpleSemaphorePosix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SimpleSemaphorePosix.c; sourceTree = "<group>"; };
+		00470ACD16A329B3008D5B45 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		00470ACE16A329B3008D5B45 /* LinkedList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LinkedList.c; sourceTree = "<group>"; };
+		00470ACF16A329B3008D5B45 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		00470AD016A329B3008D5B45 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		00470AD216A329B3008D5B45 /* battle_hymn_of_the_republic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = battle_hymn_of_the_republic.mp3; sourceTree = "<group>"; };
+		00470AD416A329B3008D5B45 /* ALmixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ALmixer.xcodeproj; sourceTree = "<group>"; };
+		00470AD816A329B3008D5B45 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00470AD916A329B3008D5B45 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00470ADB16A329B3008D5B45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00470ADD16A329B3008D5B45 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		00470ADF16A329B3008D5B45 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		00470AE016A329B3008D5B45 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00470AE116A329B3008D5B45 /* playstream-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "playstream-Info.plist"; sourceTree = "<group>"; };
+		00470AE216A329B3008D5B45 /* playstream-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "playstream-Prefix.pch"; sourceTree = "<group>"; };
+		00470AE416A329B3008D5B45 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		00470AE516A329B3008D5B45 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		00470AE616A329B3008D5B45 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		00470AE716A329B3008D5B45 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		00470AEA16A329B3008D5B45 /* ALmixer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ALmixer-Info.plist"; sourceTree = "<group>"; };
+		00470AEB16A329B3008D5B45 /* ALmixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ALmixer.xcodeproj; sourceTree = "<group>"; };
+		00470AEF16A329B3008D5B45 /* ALmixer_so-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ALmixer_so-Info.plist"; sourceTree = "<group>"; };
+		00470AF016A329B3008D5B45 /* ALmixer_so-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALmixer_so-Prefix.pch"; sourceTree = "<group>"; };
+		00470AF116A329B3008D5B45 /* ALmixer_soProj.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ALmixer_soProj.xcconfig; sourceTree = "<group>"; };
+		00470AF216A329B3008D5B45 /* ALmixer_soTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ALmixer_soTarget.xcconfig; sourceTree = "<group>"; };
+		00470AF416A329B3008D5B45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00470AF516A329B3008D5B45 /* ALmixer_swigcrash.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ALmixer_swigcrash.xcodeproj; sourceTree = "<group>"; };
+		00470AF916A329B3008D5B45 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00470AFA16A329B3008D5B45 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00470AFC16A329B3008D5B45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		00470AFE16A329B3008D5B45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00470B0016A329B3008D5B45 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		00470B0116A329B3008D5B45 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00470B0216A329B3008D5B45 /* playstream-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "playstream-Info.plist"; sourceTree = "<group>"; };
+		00470B0316A329B3008D5B45 /* playstream-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "playstream-Prefix.pch"; sourceTree = "<group>"; };
+		00470B7916A32ACB008D5B45 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00470B7A16A32ACB008D5B45 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		00470B7D16A32B55008D5B45 /* ALmixer_wrap_javascriptcore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ALmixer_wrap_javascriptcore.c; path = Classes/ALmixer_wrap_javascriptcore.c; sourceTree = "<group>"; };
+		24DD6CF71134B3F500162E58 /* NetPlaycontrolAlmixerswigModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetPlaycontrolAlmixerswigModule.h; path = Classes/NetPlaycontrolAlmixerswigModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* NetPlaycontrolAlmixerswigModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetPlaycontrolAlmixerswigModule.m; path = Classes/NetPlaycontrolAlmixerswigModule.m; sourceTree = "<group>"; };
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		24DE9E0F11C5FE74003F90F6 /* NetPlaycontrolAlmixerswigModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetPlaycontrolAlmixerswigModuleAssets.h; path = Classes/NetPlaycontrolAlmixerswigModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* NetPlaycontrolAlmixerswigModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetPlaycontrolAlmixerswigModuleAssets.m; path = Classes/NetPlaycontrolAlmixerswigModuleAssets.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* NetPlaycontrolAlmixerswig_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetPlaycontrolAlmixerswig_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libNetPlaycontrolAlmixerswig.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNetPlaycontrolAlmixerswig.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00470B7B16A32ACB008D5B45 /* AudioToolbox.framework in Frameworks */,
+				00470B7C16A32ACB008D5B45 /* OpenAL.framework in Frameworks */,
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00470A9E16A329B3008D5B45 /* ALmixer */ = {
+			isa = PBXGroup;
+			children = (
+				00470AA116A329B3008D5B45 /* ALmixer.c */,
+				00470AA216A329B3008D5B45 /* ALmixer.h */,
+				00470AA316A329B3008D5B45 /* Android.mk */,
+				00470AA416A329B3008D5B45 /* CircularQueue.c */,
+				00470AA516A329B3008D5B45 /* CircularQueue.h */,
+				00470AA616A329B3008D5B45 /* cmake_uninstall.cmake.in */,
+				00470AA716A329B3008D5B45 /* CMakeLists.txt */,
+				00470AA816A329B3008D5B45 /* doc */,
+				00470AAA16A329B3008D5B45 /* EXAMPLES */,
+				00470AB216A329B3008D5B45 /* Isolated */,
+				00470ACD16A329B3008D5B45 /* LICENSE.txt */,
+				00470ACE16A329B3008D5B45 /* LinkedList.c */,
+				00470ACF16A329B3008D5B45 /* LinkedList.h */,
+				00470AD016A329B3008D5B45 /* README.txt */,
+				00470AD116A329B3008D5B45 /* Xcode */,
+			);
+			path = ALmixer;
+			sourceTree = "<group>";
+		};
+		00470AA816A329B3008D5B45 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				00470AA916A329B3008D5B45 /* ALmixer.doxyfile.cmake */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		00470AAA16A329B3008D5B45 /* EXAMPLES */ = {
+			isa = PBXGroup;
+			children = (
+				00470AAD16A329B3008D5B45 /* CMakeLists.txt */,
+				00470AAE16A329B3008D5B45 /* playsound.c */,
+				00470AAF16A329B3008D5B45 /* playstream.c */,
+				00470AB016A329B3008D5B45 /* SDLMain.h */,
+				00470AB116A329B3008D5B45 /* SDLMain.m */,
+			);
+			path = EXAMPLES;
+			sourceTree = "<group>";
+		};
+		00470AB216A329B3008D5B45 /* Isolated */ = {
+			isa = PBXGroup;
+			children = (
+				00470AB316A329B3008D5B45 /* ALmixer_RWops.c */,
+				00470AB416A329B3008D5B45 /* ALmixer_RWops.h */,
+				00470AB516A329B3008D5B45 /* coreaudio.c */,
+				00470AB616A329B3008D5B45 /* LGPL */,
+				00470ABD16A329B3008D5B45 /* luaal */,
+				00470AC016A329B3008D5B45 /* SimpleMutex.c */,
+				00470AC116A329B3008D5B45 /* SimpleMutex.h */,
+				00470AC216A329B3008D5B45 /* SimpleThread.h */,
+				00470AC316A329B3008D5B45 /* SimpleThreadPosix.c */,
+				00470AC416A329B3008D5B45 /* SimpleThreadWindows.c */,
+				00470AC516A329B3008D5B45 /* SoundDecoder.c */,
+				00470AC616A329B3008D5B45 /* SoundDecoder.h */,
+				00470AC716A329B3008D5B45 /* SoundDecoder_Internal.h */,
+				00470AC816A329B3008D5B45 /* tErrorLib.c */,
+				00470AC916A329B3008D5B45 /* tErrorLib.h */,
+				00470ACA16A329B3008D5B45 /* UNUSED */,
+			);
+			path = Isolated;
+			sourceTree = "<group>";
+		};
+		00470AB616A329B3008D5B45 /* LGPL */ = {
+			isa = PBXGroup;
+			children = (
+				00470AB716A329B3008D5B45 /* mpg123.c */,
+				00470AB816A329B3008D5B45 /* oggtremor.c */,
+				00470AB916A329B3008D5B45 /* oggvorbis.c */,
+				00470ABA16A329B3008D5B45 /* SDL_endian_minimal.h */,
+				00470ABB16A329B3008D5B45 /* SDL_sound_minimal.c */,
+				00470ABC16A329B3008D5B45 /* wav.c */,
+			);
+			path = LGPL;
+			sourceTree = "<group>";
+		};
+		00470ABD16A329B3008D5B45 /* luaal */ = {
+			isa = PBXGroup;
+			children = (
+				00470ABE16A329B3008D5B45 /* luaal.c */,
+				00470ABF16A329B3008D5B45 /* luaal.h */,
+			);
+			path = luaal;
+			sourceTree = "<group>";
+		};
+		00470ACA16A329B3008D5B45 /* UNUSED */ = {
+			isa = PBXGroup;
+			children = (
+				00470ACB16A329B3008D5B45 /* SimpleSemaphore.h */,
+				00470ACC16A329B3008D5B45 /* SimpleSemaphorePosix.c */,
+			);
+			path = UNUSED;
+			sourceTree = "<group>";
+		};
+		00470AD116A329B3008D5B45 /* Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				00470AD216A329B3008D5B45 /* battle_hymn_of_the_republic.mp3 */,
+				00470AD316A329B3008D5B45 /* iOS */,
+				00470AE816A329B3008D5B45 /* Mac */,
+			);
+			path = Xcode;
+			sourceTree = "<group>";
+		};
+		00470AD316A329B3008D5B45 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				00470AD416A329B3008D5B45 /* ALmixer.xcodeproj */,
+				00470AD716A329B3008D5B45 /* playstream */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		00470AD516A329B3008D5B45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00470B4316A329B5008D5B45 /* libALmixer.a */,
+				00470B4516A329B5008D5B45 /* playstream.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00470AD716A329B3008D5B45 /* playstream */ = {
+			isa = PBXGroup;
+			children = (
+				00470AD816A329B3008D5B45 /* AppDelegate.h */,
+				00470AD916A329B3008D5B45 /* AppDelegate.m */,
+				00470ADA16A329B3008D5B45 /* InfoPlist.strings */,
+				00470ADC16A329B3008D5B45 /* ViewController_iPad.xib */,
+				00470ADE16A329B3008D5B45 /* ViewController_iPhone.xib */,
+				00470AE016A329B3008D5B45 /* main.m */,
+				00470AE116A329B3008D5B45 /* playstream-Info.plist */,
+				00470AE216A329B3008D5B45 /* playstream-Prefix.pch */,
+				00470AE316A329B3008D5B45 /* Shaders */,
+				00470AE616A329B3008D5B45 /* ViewController.h */,
+				00470AE716A329B3008D5B45 /* ViewController.m */,
+			);
+			path = playstream;
+			sourceTree = "<group>";
+		};
+		00470AE316A329B3008D5B45 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				00470AE416A329B3008D5B45 /* Shader.fsh */,
+				00470AE516A329B3008D5B45 /* Shader.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		00470AE816A329B3008D5B45 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				00470AE916A329B3008D5B45 /* ALmixer */,
+				00470AEB16A329B3008D5B45 /* ALmixer.xcodeproj */,
+				00470AEE16A329B3008D5B45 /* ALmixer_so */,
+				00470AF516A329B3008D5B45 /* ALmixer_swigcrash.xcodeproj */,
+				00470AF816A329B3008D5B45 /* playstream */,
+				00470B0416A329B3008D5B45 /* swigtest */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		00470AE916A329B3008D5B45 /* ALmixer */ = {
+			isa = PBXGroup;
+			children = (
+				00470AEA16A329B3008D5B45 /* ALmixer-Info.plist */,
+			);
+			path = ALmixer;
+			sourceTree = "<group>";
+		};
+		00470AEC16A329B3008D5B45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00470B4916A329B5008D5B45 /* ALmixer.framework */,
+				00470B4B16A329B5008D5B45 /* playstream.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00470AEE16A329B3008D5B45 /* ALmixer_so */ = {
+			isa = PBXGroup;
+			children = (
+				00470AEF16A329B3008D5B45 /* ALmixer_so-Info.plist */,
+				00470AF016A329B3008D5B45 /* ALmixer_so-Prefix.pch */,
+				00470AF116A329B3008D5B45 /* ALmixer_soProj.xcconfig */,
+				00470AF216A329B3008D5B45 /* ALmixer_soTarget.xcconfig */,
+				00470AF316A329B3008D5B45 /* InfoPlist.strings */,
+			);
+			path = ALmixer_so;
+			sourceTree = "<group>";
+		};
+		00470AF616A329B3008D5B45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00470B5216A329B5008D5B45 /* ALmixer.framework */,
+				00470B5416A329B5008D5B45 /* playstream.app */,
+				00470B5616A329B5008D5B45 /* swigtest */,
+				00470B5816A329B5008D5B45 /* liblua.a */,
+				00470B5A16A329B5008D5B45 /* ALmixer.so */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00470AF816A329B3008D5B45 /* playstream */ = {
+			isa = PBXGroup;
+			children = (
+				00470AF916A329B3008D5B45 /* AppDelegate.h */,
+				00470AFA16A329B3008D5B45 /* AppDelegate.m */,
+				00470AFB16A329B3008D5B45 /* Credits.rtf */,
+				00470AFD16A329B3008D5B45 /* InfoPlist.strings */,
+				00470AFF16A329B3008D5B45 /* MainMenu.xib */,
+				00470B0116A329B3008D5B45 /* main.m */,
+				00470B0216A329B3008D5B45 /* playstream-Info.plist */,
+				00470B0316A329B3008D5B45 /* playstream-Prefix.pch */,
+			);
+			path = playstream;
+			sourceTree = "<group>";
+		};
+		00470B0416A329B3008D5B45 /* swigtest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = swigtest;
+			sourceTree = "<group>";
+		};
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libNetPlaycontrolAlmixerswig.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* almixertitaniumiosswig */ = {
+			isa = PBXGroup;
+			children = (
+				00470B7916A32ACB008D5B45 /* AudioToolbox.framework */,
+				00470B7A16A32ACB008D5B45 /* OpenAL.framework */,
+				00470A9E16A329B3008D5B45 /* ALmixer */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = almixertitaniumiosswig;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				00470B7D16A32B55008D5B45 /* ALmixer_wrap_javascriptcore.c */,
+				24DE9E0F11C5FE74003F90F6 /* NetPlaycontrolAlmixerswigModuleAssets.h */,
+				24DE9E1011C5FE74003F90F6 /* NetPlaycontrolAlmixerswigModuleAssets.m */,
+				24DD6CF71134B3F500162E58 /* NetPlaycontrolAlmixerswigModule.h */,
+				24DD6CF81134B3F500162E58 /* NetPlaycontrolAlmixerswigModule.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* NetPlaycontrolAlmixerswig_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* NetPlaycontrolAlmixerswig_Prefix.pch in Headers */,
+				24DD6CF91134B3F500162E58 /* NetPlaycontrolAlmixerswigModule.h in Headers */,
+				24DE9E1111C5FE74003F90F6 /* NetPlaycontrolAlmixerswigModuleAssets.h in Headers */,
+				00470B1316A329B3008D5B45 /* ALmixer.h in Headers */,
+				00470B1516A329B3008D5B45 /* CircularQueue.h in Headers */,
+				00470B1816A329B3008D5B45 /* SDLMain.h in Headers */,
+				00470B1B16A329B3008D5B45 /* ALmixer_RWops.h in Headers */,
+				00470B2016A329B3008D5B45 /* SDL_endian_minimal.h in Headers */,
+				00470B2416A329B3008D5B45 /* luaal.h in Headers */,
+				00470B2616A329B3008D5B45 /* SimpleMutex.h in Headers */,
+				00470B2716A329B3008D5B45 /* SimpleThread.h in Headers */,
+				00470B2B16A329B3008D5B45 /* SoundDecoder.h in Headers */,
+				00470B2C16A329B3008D5B45 /* SoundDecoder_Internal.h in Headers */,
+				00470B2E16A329B3008D5B45 /* tErrorLib.h in Headers */,
+				00470B2F16A329B3008D5B45 /* SimpleSemaphore.h in Headers */,
+				00470B3216A329B3008D5B45 /* LinkedList.h in Headers */,
+				00470B3316A329B3008D5B45 /* AppDelegate.h in Headers */,
+				00470B3616A329B3008D5B45 /* playstream-Prefix.pch in Headers */,
+				00470B3916A329B3008D5B45 /* ViewController.h in Headers */,
+				00470B3B16A329B3008D5B45 /* ALmixer_so-Prefix.pch in Headers */,
+				00470B3C16A329B3008D5B45 /* AppDelegate.h in Headers */,
+				00470B3F16A329B3008D5B45 /* playstream-Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* almixertitaniumiosswig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "almixertitaniumiosswig" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = almixertitaniumiosswig;
+			productName = almixertitaniumiosswig;
+			productReference = D2AAC07E0554694100DB518D /* libNetPlaycontrolAlmixerswig.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "almixertitaniumiosswig" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* almixertitaniumiosswig */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 00470AD516A329B3008D5B45 /* Products */;
+					ProjectRef = 00470AD416A329B3008D5B45 /* ALmixer.xcodeproj */;
+				},
+				{
+					ProductGroup = 00470AEC16A329B3008D5B45 /* Products */;
+					ProjectRef = 00470AEB16A329B3008D5B45 /* ALmixer.xcodeproj */;
+				},
+				{
+					ProductGroup = 00470AF616A329B3008D5B45 /* Products */;
+					ProjectRef = 00470AF516A329B3008D5B45 /* ALmixer_swigcrash.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* almixertitaniumiosswig */,
+				24416B8111C4CA220047AFDD /* Build & Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		00470B4316A329B5008D5B45 /* libALmixer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libALmixer.a;
+			remoteRef = 00470B4216A329B5008D5B45 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00470B4516A329B5008D5B45 /* playstream.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = playstream.app;
+			remoteRef = 00470B4416A329B5008D5B45 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00470B4916A329B5008D5B45 /* ALmixer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ALmixer.framework;
+			remoteRef = 00470B4816A329B5008D5B45 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00470B4B16A329B5008D5B45 /* playstream.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = playstream.app;
+			remoteRef = 00470B4A16A329B5008D5B45 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00470B5216A329B5008D5B45 /* ALmixer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ALmixer.framework;
+			remoteRef = 00470B5116A329B5008D5B45 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00470B5416A329B5008D5B45 /* playstream.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = playstream.app;
+			remoteRef = 00470B5316A329B5008D5B45 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00470B5616A329B5008D5B45 /* swigtest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = swigtest;
+			remoteRef = 00470B5516A329B5008D5B45 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00470B5816A329B5008D5B45 /* liblua.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = liblua.a;
+			remoteRef = 00470B5716A329B5008D5B45 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00470B5A16A329B5008D5B45 /* ALmixer.so */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = ALmixer.so;
+			remoteRef = 00470B5916A329B5008D5B45 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24416B8011C4CA220047AFDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\npython \"${TITANIUM_SDK}/titanium.py\" run --dir=\"${PROJECT_DIR}\"\nexit $?\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DD6CFA1134B3F500162E58 /* NetPlaycontrolAlmixerswigModule.m in Sources */,
+				24DE9E1211C5FE74003F90F6 /* NetPlaycontrolAlmixerswigModuleAssets.m in Sources */,
+				00470B1216A329B3008D5B45 /* ALmixer.c in Sources */,
+				00470B1416A329B3008D5B45 /* CircularQueue.c in Sources */,
+				00470B1A16A329B3008D5B45 /* ALmixer_RWops.c in Sources */,
+				00470B1C16A329B3008D5B45 /* coreaudio.c in Sources */,
+				00470B2516A329B3008D5B45 /* SimpleMutex.c in Sources */,
+				00470B2816A329B3008D5B45 /* SimpleThreadPosix.c in Sources */,
+				00470B2A16A329B3008D5B45 /* SoundDecoder.c in Sources */,
+				00470B2D16A329B3008D5B45 /* tErrorLib.c in Sources */,
+				00470B3116A329B3008D5B45 /* LinkedList.c in Sources */,
+				00470B7E16A32B55008D5B45 /* ALmixer_wrap_javascriptcore.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* almixertitaniumiosswig */;
+			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00470ADA16A329B3008D5B45 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00470ADB16A329B3008D5B45 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		00470ADC16A329B3008D5B45 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00470ADD16A329B3008D5B45 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		00470ADE16A329B3008D5B45 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00470ADF16A329B3008D5B45 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		00470AF316A329B3008D5B45 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00470AF416A329B3008D5B45 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		00470AFB16A329B3008D5B45 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00470AFC16A329B3008D5B45 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		00470AFD16A329B3008D5B45 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00470AFE16A329B3008D5B45 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		00470AFF16A329B3008D5B45 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00470B0016A329B3008D5B45 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/NetPlaycontrolAlmixerswig.dst;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					OpenAL,
+					"-framework",
+					AudioToolbox,
+				);
+				PRODUCT_NAME = NetPlaycontrolAlmixerswig;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/NetPlaycontrolAlmixerswig.dst;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					OpenAL,
+					"-framework",
+					AudioToolbox,
+				);
+				PRODUCT_NAME = NetPlaycontrolAlmixerswig;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/NetPlaycontrolAlmixerswig.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NetPlaycontrolAlmixerswig_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TI_VERSION=$(TI_VERSION)",
+					ALMIXER_COMPILE_WITHOUT_SDL,
+					ENABLE_ALMIXER_THREADS,
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = NetPlaycontrolAlmixerswig;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(BASE_SDK)/System/Library/Frameworks/OpenAL.framework/Headers";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				DSTROOT = /tmp/NetPlaycontrolAlmixerswig.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NetPlaycontrolAlmixerswig_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TI_VERSION=$(TI_VERSION)",
+					ALMIXER_COMPILE_WITHOUT_SDL,
+					ENABLE_ALMIXER_THREADS,
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = NetPlaycontrolAlmixerswig;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(BASE_SDK)/System/Library/Frameworks/OpenAL.framework/Headers";
+			};
+			name = Release;
+		};
+		24416B8211C4CA220047AFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build & test";
+			};
+			name = Debug;
+		};
+		24416B8311C4CA220047AFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Build & test";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "almixertitaniumiosswig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "almixertitaniumiosswig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24416B8211C4CA220047AFDD /* Debug */,
+				24416B8311C4CA220047AFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

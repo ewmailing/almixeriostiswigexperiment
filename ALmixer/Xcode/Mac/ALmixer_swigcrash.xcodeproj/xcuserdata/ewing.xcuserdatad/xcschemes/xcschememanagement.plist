@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ALmixer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>ALmixer_bundle.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>ALmixer_so.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>playstream.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>swigtest copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>swigtest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0047076E1694EDE8008D5B45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0047081F1694F2B2008D5B45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>00470847169508D1008D5B45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0047093016950F20008D5B45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0047094816950FB8008D5B45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0047097816951000008D5B45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>004709B91695126F008D5B45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

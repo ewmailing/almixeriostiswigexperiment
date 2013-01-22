@@ -1,0 +1,5 @@
+//
+// Prefix header for all source files of the 'ALmixer_so' target in the 'ALmixer_so' project
+//
+
+#include <CoreFoundation/CoreFoundation.h>
